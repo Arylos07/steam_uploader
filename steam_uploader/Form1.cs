@@ -1120,6 +1120,11 @@ namespace steam_uploader
             else
                 AddLog("UPDATED: build process will NOT upload the build.");
         }
+
+        private void saveProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveSettings();
+        }
     }
 }
 
