@@ -52,6 +52,7 @@
             this.generateVDFFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uploadTheBuildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveChangesExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -65,7 +66,7 @@
             this.toolStripStatusLabel_appid = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_description = new System.Windows.Forms.ToolStripStatusLabel();
-            this.saveProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifyProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -78,7 +79,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.modifyProfileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(684, 24);
@@ -264,6 +266,13 @@
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // saveProfileToolStripMenuItem
+            // 
+            this.saveProfileToolStripMenuItem.Name = "saveProfileToolStripMenuItem";
+            this.saveProfileToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.saveProfileToolStripMenuItem.Text = "Save Profile";
+            this.saveProfileToolStripMenuItem.Click += new System.EventHandler(this.saveProfileToolStripMenuItem_Click);
+            // 
             // saveChangesExitToolStripMenuItem
             // 
             this.saveChangesExitToolStripMenuItem.Name = "saveChangesExitToolStripMenuItem";
@@ -406,12 +415,12 @@
             this.toolStripStatusLabel_description.Size = new System.Drawing.Size(15, 20);
             this.toolStripStatusLabel_description.Text = "-";
             // 
-            // saveProfileToolStripMenuItem
+            // modifyProfileToolStripMenuItem
             // 
-            this.saveProfileToolStripMenuItem.Name = "saveProfileToolStripMenuItem";
-            this.saveProfileToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.saveProfileToolStripMenuItem.Text = "Save Profile";
-            this.saveProfileToolStripMenuItem.Click += new System.EventHandler(this.saveProfileToolStripMenuItem_Click);
+            this.modifyProfileToolStripMenuItem.Name = "modifyProfileToolStripMenuItem";
+            this.modifyProfileToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.modifyProfileToolStripMenuItem.Text = "Modify Profile";
+            this.modifyProfileToolStripMenuItem.Click += new System.EventHandler(this.configureThisProfileToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -481,6 +490,7 @@
         private System.Windows.Forms.ToolStripMenuItem generateVDFFilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uploadTheBuildToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveProfileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifyProfileToolStripMenuItem;
     }
 }
 
